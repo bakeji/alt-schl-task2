@@ -1,0 +1,221 @@
+@import url('https://fonts.cdnfonts.com/css/sofia-pro?styles=17636,17632,17634,17638,17628');
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #ffffff;
+    width: 100%;
+    overflow-x: hidden;
+    height: 100vh;
+}
+main{
+    display: flex;
+    gap: 80px;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+.left-flex{
+    display: flex;
+    width: 100% ;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    justify-content: center;
+}
+.left-flex-txt{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 430px;
+}
+.left-flex-txt h1{
+    font-family: 'Sofia Pro', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+.left-flex-txt p{
+    font-family: 'Sofia Pro', sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 25px;
+}
+.second-flex{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color:#FFFFFF;
+    box-shadow: 0px 4px 50px 0px #0408131A;
+    margin: auto 0;
+    align-items: center;
+    border-radius: 6px; 
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 80%;
+    margin-top: 25px;
+    align-items: flex-start;
+}
+.name, .gen-dob, .wgt-hgt{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+}
+.pair, .act-lvl, .pwd{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.pair label{
+    width: 188px;
+}
+label{
+font-family: 'Sofia Pro', sans-serif;
+font-size: 14px;
+font-weight: 600;
+}
+.pair input, .pair select{
+    width: 100%;
+height: 38px;
+border: 1px solid #F0F0F0;
+border-radius: 2px;
+}
+.act-lvl, .pwd{
+    width: 100%;
+}
+.act-lvl select, .pwd input{
+    width: 100%;
+height: 38px;
+border: 1px solid #F0F0F0;
+border-radius: 2px;
+}
+button{
+    width: 500px;
+height: 48px;
+background: #2EC4B6;
+box-shadow: 0px 10px 40px 0px #0000001A;
+font-family: 'Sofia Pro', sans-serif;
+font-size: 16px;
+font-weight: 600;
+color: #ffffff;
+text-align: center;
+width: 410px;
+}
+input{
+    font-family: 'Sofia Pro', sans-serif;
+font-size: 14px;
+font-weight: 400;
+text-align: left;
+}
+input::placeholder, .ph{
+    font-family:'Sofia Pro', sans-serif;
+font-size: 14px;
+color: #737373;
+font-weight: 300;
+}
+input:focus, select:focus{
+    border: 3px solid #2EC4B6;
+    outline: none;
+}
+form p{
+font-family: 'Sofia Pro', sans-serif;
+font-size: 12px;
+font-weight: 400;
+margin-bottom: 60px;
+}
+.mobile-p{
+    display: none;
+}
+
+span{
+color: #2EC4B6;
+}
+.mobile-p{
+    display: none;
+}
+@media screen and (max-width:480px){
+    body{
+      background: #F7FDFC;;
+    }
+    main{
+        flex-direction: column;
+        width: 90%;
+        gap: 30px;
+    }
+    .left-flex{
+        margin-top: 30px;
+        gap: 30px;
+    }
+    .left-flex img{
+        height: 40px;
+        width: 40px;
+    }
+    .desk-p{
+        display: none;
+    }
+    .mobile-p{
+        display: block;
+    }
+    .left-flex-txt{
+        width: 100%;
+        gap: 30px;
+        
+    }
+    .left-flex-txt p{
+        font-weight: 300;
+        color: #737373;
+    }
+    .second-flex{
+        width: 95%;
+        height: max-content;
+        margin: 0 auto;
+    }
+    form{
+        gap: 30px;
+        width: 80%;
+    }
+    .name, .gen-dob, .wgt-hgt, .pwd, .act-lvl{
+        flex-direction: column;
+        gap: 30px;
+        align-items: normal;
+        width: 100%;
+    }
+    .pair input,.pair select, .pwd input, .act-lvl select, button{
+        width: 100%;
+        height: 48px;
+    } 
+    .pair{
+        gap: 30px;
+    }
+    button{
+        margin-bottom: 30px;
+    }
+
+    form p{
+        display: none;
+    }
+    .mobile-p{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .mobile-p p{
+text-align: center;
+font-family: 'Sofia Pro', sans-serif;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 25px;
+margin-bottom: 40px;
+    }
+    
+}

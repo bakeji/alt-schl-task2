@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> for individual form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="left-flex">
+            <img src="Logo.png" alt="logo">
+            <div class="left-flex-txt">
+                <h1>For Individuals</h1>
+                <p class="desk-p">Start benefiting from the wellness experience. For companies looking on increasing productivity, and improving organization wellness.</p>
+                <p class="mobile-p">Inspiring wholesome harmony for the mind, body and spirit, for everyone, everywhere.</p>
+            </div>
+        </div>
+
+        <div class="second-flex">
+            <form action="#">
+                <div class="name">
+                    <div class="pair">
+                        <label for="first-name"> First Name  </label>
+                        <input type="text" name="first-name" id="first-name">
+                    </div>
+                    <div class="pair">
+                        <label for="last-name"> Last Name </label>
+                        <input type="text"name="last-name" id="last-name">
+                    </div>
+                </div>
+
+                <div class="gen-dob">
+                    <div class="pair">
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender">
+                        <option class="ph" selected disabled value="">Selecct here</option>
+                        <option value="female">female</option>
+                        <option value="male">male</option>
+                    </select>
+                </div>
+
+                <div class="pair">
+                    <label for="dob"> Date of Birth </label>
+                        <input type="date" placeholder="Selet here" name="dob" id="">
+                  
+                    </div>
+                </div>
+
+                <div class="wgt-hgt">
+                    <div class="pair">
+                    <label for="weight">Weight(KG) </label>
+                    <input pattern="[0-9]" placeholder="Enter Weight" name="weight"id="weight" type="text" >
+                </div>
+
+                <div class="pair">
+                    <label for="height">Height(CM)</label>
+                    <input pattern="[0-9]" placeholder="Enter height here" type="text" name="height" id="height">
+                </div>
+            </div>
+
+                <div class="act-lvl">
+                    <label for="activity"> Activity Level</label>
+                    <select name="activity" id="activity">
+                        <option class="ph" selected disabled value="">Select here</option>
+                        <option value="high">HIGH</option>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                    </select>
+                </div>
+                <div class="pwd">
+                    <label for="pwd">Password</label>
+                    <input type="password" name="pwd" id="pwd">
+                </div>
+
+                <button>Register</button>
+                <p>By clicking Register, you agree to our <span> Terms of Use</span> and our <span>Privacy Policy</span></p>
+            </form>
+        </div>
+
+        <div class="mobile-p">
+            <p>By clicking Register, you agree to our <span> Terms of Use</span> and our <span>Privacy Policy</span></p>
+
+        </div>
+    </main>
+    
+</body>
+</html>
